@@ -1,1 +1,1 @@
-# splash-images
+# SagaSplash
