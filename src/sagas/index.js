@@ -1,11 +1,12 @@
 import { takeEvery } from 'redux-saga/effects';
+import { IMAGES } from '../constants';
 
-function* workerSaga() {
-    console.log('From Worker');
+function* handleImagesLoad() {
+    console.log('fetching Images from unsplash');
 }
 
 //watcher saga
 function* rootSaga() {
-    yield takeEvery('HELLO', workerSaga);
+    yield takeEvery(IMAGES.LOAD, handleImagesLoad);
 }
 export default rootSaga;
